@@ -1,7 +1,64 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:  0;
+}
+
+li.nav-left {
+    float: left;
+    margin: 18px 9px;
+}
+
+li.nav-left:first-child {
+    margin-left: 17px;
+}
+
+li.nav-right {
+    float: right;
+    padding: 18px 9px;
+}
+
+li a { 
+    color: #100;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+li>a[href]:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.fa-bars {
+    color: #666;
+}
+
+.fa-bars:hover {
+    color: #000;
+}
+
+.sign-in-btn {
+    background: rgba(0, 90, 255, 0.8);
+    border-radius: 2px;
+    color: #fff;
+    display: inline;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 30px;
+    padding: 7px 13px;
 }
 
 .main-section {
@@ -59,3 +116,50 @@ input[type=button]:hover {
     color: #222;
     cursor: pointer;
 }
+
+input[type=button]:active {
+    border: 1px solid rgb(66, 132, 255);
+    box-shadow: none;
+}
+
+footer {
+    position: fixed;
+    background: #eee;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+    height: 41px;
+    margin-left: -10px;
+    width: 100vw;
+}
+
+li.footer-left a {
+    color: #555;
+    float: left;
+    font-size: 14px;
+    margin: 13px 16px;
+}
+
+li.footer-left:first-child {
+    margin-left: 20px;
+}
+
+li.footer-right a {
+    color: #555;
+    float: right;
+    font-size: 14px;
+    margin: 13px 16px;
+}
+
+li.footer-right:first-child a {
+    padding-right: 200px;
+}
+
+li.footer-left a:hover,
+li.footer-right a:hover {
+    color: #555;
+}
+
+li.footer-right:nth-child(4) > a:nth-child(1) {
+    margin-right: 35px;
+   }
+   
